@@ -3,12 +3,17 @@ Console.WriteLine("Введите цифру от 1 до 7");
 string inputNumber = Console.ReadLine();
 int number = int.Parse(inputNumber);
 
-if (number == 1) Console.WriteLine("нет, будний день");
-if (number == 2) Console.WriteLine("нет, будний день");
-if (number == 3) Console.WriteLine("нет, будний день");
-if (number == 4) Console.WriteLine("нет, будний день");
-if (number == 5) Console.WriteLine("нет, будний день");
-if (number == 6) Console.WriteLine("да, выходной день");
-if (number == 7) Console.WriteLine("да, выходной день");
+//if (number == 1) Console.WriteLine("нет, будний день");
+//if (number == 2) Console.WriteLine("нет, будний день");
+//if (number == 3) Console.WriteLine("нет, будний день");
+//if (number == 4) Console.WriteLine("нет, будний день");
+//if (number == 5) Console.WriteLine("нет, будний день");
+//if (number == 6) Console.WriteLine("да, выходной день");
+//if (number == 7) Console.WriteLine("да, выходной день");
+//if (number > 7) Console.WriteLine("в неделе только 7 дней");
+//if (number < 1) Console.WriteLine("в неделе только 7 дней");
+
 if (number > 7) Console.WriteLine("в неделе только 7 дней");
-if (number < 1) Console.WriteLine("в неделе только 7 дней");
+else if (number < 1) Console.WriteLine("в неделе не может быть нулевой или минусовой день");
+else if (number < 6) Console.WriteLine("нет, будний день");
+else Console.WriteLine("да, выходной день");
